@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZ STORE - CAMISAS</title>
+    <link rel="stylesheet" href="/style/product.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">FZ STORE</a>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#itens">Camisas</a></li>
+            <li><a href="#new">Novidades</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href="#"><i class="bx bx-shopping-bag"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>         
+    </header>
+
+    <section class="shirt-buy" id="shirt-buy">
+        
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="productImg" src="/images/shirt-main.jpg" alt="Imagem do Produto">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h2 id="productName">Camiseta Nike Dri-FIT UV Miler Run Division Masculina</h2>
+            <p class="category" id="productCategory">Corrida</p> 
+            <div class="price">
+                <span class="current-price" id="productCurrentPrice">R$ 246,99 no Pix</span>
+                <span class="original-price" id="productOriginalPrice"><del>R$ 279,99</del></span>
+                <span class="discount" id="productDiscount">12% off</span> 
+            </div>
+
+            <p>Selecione um tamanho:</p>
+            <div class="sizes">
+                <button class="size-btn" data-size="PP">PP</button>
+                <button class="size-btn" data-size="P">P</button>
+                <button class="size-btn" data-size="M">M</button>
+                <button class="size-btn" data-size="G">G</button>
+                <button class="size-btn" data-size="GG">GG</button>
+            </div>
+
+            <form id="purchaseForm">
+                <label for="quantity">Quantidade:</label>
+                <select id="quantity" name="quantity" style="width: 80px; padding: 5px; margin-top: 10px;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </form>
+
+            <p>Selecione a forma de pagamento:</p>
+            <div class="payment-methods">
+                <button class="payment-btn" data-payment="cartao-credito">Cartão de Crédito</button>
+                <button class="payment-btn" data-payment="cartao-debito">Cartão de Débito</button>
+                <button class="payment-btn" data-payment="pix">Pix</button>
+                <button class="payment-btn" data-payment="dinheiro">Dinheiro</button>
+            </div>
+
+            <button class="buy-btn" id="buyBtn">Finalizar Compra</button>
+
+            
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <h3>FZ STORE</h3>
+            <h5>Conecte-se Conosco</h5>
+            <div class="icons">
+                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/fz.futstore/"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#"><i class='bx bxs-phone'></i></a>
+            </div>
+        </div>
+
+        <div class="main-contact">
+            <h3>Explorar</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#itens">Camisas</a></li>
+            <li><a href="#new">Novidades</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Nossos serviços</h3>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Entrega Rápida</a></li>
+            <li><a href="#"></a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Comprar</h3>
+            <li><a href="#">Camisas de Time</a></li>
+            <li><a href="#">Agasalhos</a></li>
+            <li><a href="#">Camisas de Time Infantil</a></li>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>© 2024 – CSL, Todos os direitos reservados</p>
+    </div>
+
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="/script/script.js"></script>
+    <script src="/script/product.js"></script>
+
+</body>
+</html>

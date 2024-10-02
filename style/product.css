@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #1919bf;
+    --main-color: #060697;
+    --big-font: 4.5rem;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;
+    --normal-font: 1rem; 
+    --btn-hover: #121212;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 14%;
+    transition: all .35s ease;
+    z-index: 1;
+}
+
+header.sticky {
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 14%;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease;
+}
+
+.navlist a:hover{
+    color: var(--main-color);
+}
+
+.header-icons i{
+    font-size: 32px;
+    color: var(--text-color);
+    margin-right: 20px;
+    transition: all .36s ease;
+}
+
+.header-icons i:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 34px;
+    color: var(--text-color);
+    z-index: 10001;
+    margin-right: 20px;
+    display: none;
+}
+
+section {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shirt-buy {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.product-gallery {
+    width: 50%;
+}
+
+.main-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.thumbnail-gallery .thumbnail {
+    width: 20%;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    border: 2px solid var(--main-color);
+}
+
+.product-info {
+    width: 40%;
+    justify-content: center;
+}
+
+.product-info h2 {
+    font-size: var(--h2-font);
+    color: var(--text-color);
+}
+
+.product-info .category {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+
+.price {
+    margin: 20px 0;
+}
+
+.current-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.original-price {
+    font-size: 1.2rem;
+    color: grey;
+    margin-left: 10px;
+}
+
+.discount {
+    font-size: 1rem;
+    color: green;
+    margin-left: 10px;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.sizes button {
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    background: #fff;
+    cursor: pointer;
+}
+
+.sizes button.active{
+    background-color: var(--main-color);
+    color: #ffff;
+}
+
+.sizes button:hover {
+    background: var(--main-color);
+    color: white;
+    transition: all .3s ease;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.payment-btn {
+    padding: 10px 15px;
+    border: 1px solid var(--main-color);
+    background-color: #fff; 
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.payment-methods button:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.payment-methods button.active {
+    background-color: var(--main-color); 
+    color: #fff; 
+}
+
+.buy-btn {
+    padding: 15px 30px;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buy-btn:hover {
+    background: var(--btn-hover);
+}
+
+#purchaseForm{
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+.contact{
+    padding: 100px;
+    background: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+    margin-top: 25px;
+}
+
+.main-contact h3{
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+    color: var(--bg-color);
+}
+
+.main-contact h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+.icons{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.icons i{
+    font-size: 25px;
+    margin-right: 1rem;
+    color: #ffffff;
+    transition: all .35s ease;
+}
+
+.icons i:hover{
+    color: var(--bg-color);
+    transform: scale(1.1) translateY(-5px);
+}
+
+.main-contact li{
+    margin-bottom: 15px;
+}
+
+.main-contact li a{
+    display: block;
+    color: #ffffff;
+    font-size: var(--normal-font);
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.main-contact li a:hover{
+    transform: translateX(-8px);
+    color: var(--bg-color);
+}
+
+.last-text{
+    text-align: center;
+    padding: 20px;
+    background: var(--text-color);
+}
+
+.last-text p{
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.top i{
+    font-size: 22px;
+    color: var(--bg-color);
+    padding: 14px;
+    background: var(--main-color);
+    border-radius: 2rem;
+}
